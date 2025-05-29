@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx_introduccion.SegundaPantalla">
+
+    <Button layoutX="14.0" layoutY="356.0" onAction="#volverAPantalla1" text="Volver a pantalla de inicio" />
+   <TextField fx:id="nombreTextField" layoutX="19.0" layoutY="53.0" prefHeight="26.0" prefWidth="560.0" promptText="Inserta tu nombre" />
+   <TextField fx:id="edadTextField" layoutX="19.0" layoutY="92.0" promptText="Inserta tu edad" />
+   <Button layoutX="180.0" layoutY="90.0" mnemonicParsing="false" onAction="#guardarPersona" text="Guardar" />
+    <TableView fx:id="tablaPersonas" layoutX="14.0" layoutY="132.0" prefHeight="213.0" prefWidth="367.0">
+        <columns>
+            <TableColumn fx:id="nombreColumna" prefWidth="120.0" text="Nombre" />
+            <TableColumn fx:id="edadColumna" prefWidth="80.0" text="Edad" />
+        </columns>
+    </TableView>
+</AnchorPane>
+
+        <!--        <?xml version="1.0" encoding="UTF-8"?>-->
+
+        <!--        <?import javafx.scene.control.Button?>-->
+        <!--        <?import javafx.scene.layout.AnchorPane?>-->
+        <!--        <?import javafx.scene.control.TextField?>-->
+
+        <!--        <?import javafx.scene.control.TableView?>-->
+        <!--        <?import javafx.scene.control.TableColumn?>-->
+        <!--<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx_introduccion.SegundaPantalla">-->
+
+        <!--<Button layoutX="14.0" layoutY="356.0" onAction="#volverAPantalla1" text="Volver a pantalla de inicio" />-->
+        <!--<TextField fx:id="nombreTextField" promptText="Inserta tu nombre" layoutX="19.0" layoutY="53.0" prefHeight="26.0" prefWidth="560.0" />-->
+        <!--<TextField fx:id="edadTextField" promptText="Inserta tu edad" layoutX="19.0" layoutY="92.0" />-->
+        <!--<Button onAction ="#guardarPersona" layoutX="19.0" layoutY="140.0" mnemonicParsing="false" text="Guardar" />-->
+        <!--<TableView fx:id="tablaPersonas">-->
+        <!--    <columns>-->
+        <!--        <TableColumn fx:id="nombreColumna" text="Nombre" prefWidth="120.0" />-->
+        <!--        <TableColumn fx:id="edadColumna" text="Edad" prefWidth="80.0" />-->
+        <!--    </columns>-->
+        <!--</TableView>-->
+        <!--</AnchorPane>-->
